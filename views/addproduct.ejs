@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <style>form {
+        margin: 20px auto;
+        max-width: 500px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 450px;
+        background: rgba(237, 232, 215, 0.923);
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 40px;
+      color:black;
+        margin-left:550px;
+        height: 625px;
+      }
+      body{background-color:rgba(188, 173, 152, 0.466)}</style>
+    <title>Add Products</title>
+</head>
+<body>
+    <form action="/add_details" method="POST">
+        <center><h1>Add Product Details</h1></center> 
+       
+        <div class="input-container">
+            <div>
+                <label for="Name">Seller ID</label>
+                <input type="text" id="item_seller_id" name="item_seller_id" placeholder="Seller ID" required>
+            </div>
+
+            <div>
+                <label for="Name">Product ID</label>
+                <input type="text" id="item_product_id" name="item_product_id" placeholder="product ID" required>
+            </div>
+        
+    <div>
+        <label for="Name">Name</label>
+        <input type="text" id="item_name" name="item_name" placeholder="item Name" required>
+    </div>
+
+    <div>
+        <label for="Name">Description</label>
+        <input type="text" id="item_des" name="item_des" placeholder="item Description" required>
+    </div>
+
+    <div>
+        <label for="Name">Price</label>
+        <input type="text" id="item_price" name="item_price" placeholder="item price" required>
+    </div>
+
+    
+
+    </div>
+    <button type="submit" ONCLICK="alert('Succesfully Added items Details...')">Submit</button>
+    
+</form>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+    <style>form {
+      margin: 20px auto;
+      max-width: 200px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      background: rgba(237, 232, 215, 0.923);
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 40px;
+    color:black;
+      margin-left:650px;
+      height: 47px;
+    }
+    body{background-color:rgba(188, 173, 152, 0.466)}
+    </style>
+    <title>Seller Dashboard</title>
+</head>
+<body>
+    <div class=Sdash>
+        <form action="/add_details" method="get">
+          <td>
+            <input type="submit"  name="add_details" value='add_details'>
+          </td>
+            <!-- <br><br><br><button type="submit" class='btn' name=add_details><b>Insert New Item</b></button><br><br><br>
+          <br> -->
+         </form>
+         <h1>
+            Items Available
+         </h1>
+         <table>
+            <td><tr>
+                <th> ID</th>
+                <th> Name</th>
+                <th> Description</th>
+                <th> Price</th>
+                
+            </tr></td>
+            <% for(var i=0;i<items.length;i++){ %>
+                <tr></tr>
+                  <form action="/itemsdetails" method="GET">
+                    
+                      
+                    <td>
+                      <input type="number" id="item_id" name="Item__id" value='<%- items[i].product_id %>' readonly>
+                    </td> 
+
+                    <td>
+                      <input type="text" id="item_name" name="Item__name" value='<%- items[i].product_name %>' readonly>
+                    </td>
+
+                    <td>
+                      <input type="text" id="item_des" name="Item__des" value='<%- items[i].description %>' readonly>
+                    </td>
+
+                    <td>
+                      <input type="number" id="item_price" name="Item__price" value='<%- items[i].price %>' readonly>
+                    </td>
+
+                    
+</form></tr><%}%>
+                </table>
+       </table>
+       <center><a href="/Slogin">Already a seller?</a><br>
+
+        <a href="/Clogin">Already a Customer?</a><br>
+        <a href="/customerR">New Customer</a></center>
+  </div>
+</body>
+</html>
+  
+
+
+                    
+
+                     
